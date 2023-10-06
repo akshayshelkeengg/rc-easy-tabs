@@ -1,6 +1,6 @@
 # rc-easy-tabs
 
-> Made with create-react-library
+
 
 [![NPM](https://img.shields.io/npm/v/rc-easy-tabs.svg)](https://www.npmjs.com/package/rc-easy-tabs) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -13,16 +13,19 @@ npm install --save rc-easy-tabs
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-import MyComponent from 'rc-easy-tabs'
-import 'rc-easy-tabs/dist/index.css'
+import  TabComponent  from 'react-easy-tabs'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  const [tabsData,setTabsData]=useState([
+    {title:"Tab1",component:<Component1/>}, //Component is your another react component that you want to use as in tab
+    {title:"Tab2",component:<Component2/>},   
+  ])
+  return <TabComponent tabsData={tabsData}/>
 }
+
+export default App
 ```
 
 ## License
