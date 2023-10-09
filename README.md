@@ -15,7 +15,7 @@ npm install --save rc-easy-tabs
 ```jsx
 import React, { useState } from 'react'
 
-import  TabComponent  from 'react-easy-tabs'
+import  TabComponent  from 'rc-easy-tabs'
 
 const App = () => {
   const [tabsData,setTabsData]=useState([

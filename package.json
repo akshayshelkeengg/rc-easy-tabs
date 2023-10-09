@@ -1,6 +1,6 @@
 {
   "name": "rc-easy-tabs",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Made with create-react-library",
   "author": "akshayshelkeengg",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
