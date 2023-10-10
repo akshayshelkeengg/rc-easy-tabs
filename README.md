@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/rc-easy-tabs.svg)](https://www.npmjs.com/package/rc-easy-tabs) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+ rc-easy-tabs is a user-friendly React library designed for effortless creation of customizable and responsive tabs with components. Its intuitive interface streamlines the tab-building process, offering a seamless experience for developers. With a focus on flexibility, it empowers users to tailor the tabs to their specific needs, ensuring a visually appealing and responsive design that effortlessly adapts to various screen sizes.
+
 ## Install
 
 ```bash
@@ -15,7 +17,7 @@ npm install --save rc-easy-tabs
 ```jsx
 import React, { useState } from 'react'
 
-import  TabComponent  from 'rc-easy-tabs'
+import TabComponent from 'rc-easy-tabs'
 
 const App = () => {
    const tabStyle= {
