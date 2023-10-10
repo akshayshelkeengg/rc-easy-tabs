@@ -18,11 +18,35 @@ import React, { useState } from 'react'
 import  TabComponent  from 'rc-easy-tabs'
 
 const App = () => {
+   const tabStyle= {
+    background:'#C0CFFA',
+    borderStyle: 'solid',
+    borderWidth: '1px',
+    padding:'4px',
+    borderTopLeftRadius: '10px',
+    borderTopRightRadius: '10px',
+    cursor: 'pointer',
+  }
+
+  const selectedTab= {
+    borderStyle: 'solid',
+    borderWidth: '1px',
+    padding:'6px',
+    borderTopLeftRadius: '10px',
+    borderTopRightRadius: '10px',
+    cursor: 'pointer',
+    background:'#48578E',    
+    color:'white'
+  }  
   const [tabsData,setTabsData]=useState([
     {title:"Tab1",component:<Component1/>}, //Component is your another react component that you want to use as in tab
     {title:"Tab2",component:<Component2/>},   
   ])
-  return <TabComponent tabsData={tabsData}/>
+  return <TabComponent 
+              tabsData={tabs} 
+              tabStyle={tabStyle} //optional, If not provided default style will be applied
+              selectedTabStyle={selectedTab} //optional, If not provided default style will be applied
+          />
 }
 
 export default App
@@ -31,3 +55,13 @@ export default App
 ## License
 
 MIT © [akshayshelkeengg](https://github.com/akshayshelkeengg)
+
+
+## Keywords
+
+- react
+- easy
+- tabs
+- react-component
+- responsive tabs
+- customizable

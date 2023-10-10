@@ -17,11 +17,11 @@ const styles = {
     borderTopLeftRadius: '10px',
     borderTopRightRadius: '10px',
     cursor: 'pointer',
-    background:'#ccc',    
+    background:'#ccc',
   },  
 };
 
-export default function TabComponent({tabsData}) {  
+export default function TabComponent({tabsData,tabStyle,selectedTabStyle}) {  
   
   const [tabs,setTabs]=useState(tabsData)
 
@@ -57,7 +57,7 @@ export default function TabComponent({tabsData}) {
       <div className='row' >        
         {tabs.map((tab,index)=>{
           return (
-          <div key={index} className='col-lg-3 col-md-4 col-sm-9' style={tab.selected?styles.selectedTab:styles.singleTab} onClick={()=>handleTabSelection(index)}>
+          <div key={index} className='col-lg-3 col-md-4 col-sm-9' style={tab.selected?selectedTabStyle===undefined?styles.selectedTab:selectedTabStyle:tabStyle===undefined?styles.singleTab:tabStyle} onClick={()=>handleTabSelection(index)}>
               {tab.title}
           </div>)
         })}

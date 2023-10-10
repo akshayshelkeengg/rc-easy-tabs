@@ -8,6 +8,7 @@
   "main": "dist/TabComponent.js",
   "module": "dist/TabComponent.modern.js",
   "source": "src/TabComponent.js",
+  "keywords": ["react", "tabs", "easy","react-component","responsive tabs"],
   "engines": {
     "node": ">=10"
   },
