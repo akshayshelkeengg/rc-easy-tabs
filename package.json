@@ -1,13 +1,13 @@
 {
   "name": "rc-easy-tabs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React library to create tabs easily",
   "author": "akshayshelkeengg",
   "license": "MIT",
   "repository": "akshayshelkeengg/rc-easy-tabs",
-  "main": "dist/TabComponent.js",
-  "module": "dist/TabComponent.modern.js",
-  "source": "src/TabComponent.js",
+  "main": "dist/component/TabComponent.js",
+  "module": "dist/component/TabComponent.modern.js",
+  "source": "src/component/TabComponent.js",
   "keywords": ["react", "tabs", "easy","react-component","responsive tabs"],
   "engines": {
     "node": ">=10"
