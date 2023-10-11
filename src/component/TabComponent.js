@@ -34,11 +34,11 @@ export default function TabComponent({tabsData,tabStyle,selectedTabStyle}) {
       var newPropStyle={}
       if('borderTopLeftRadius' in tabStyle){
         console.log("Exists")
-        newPropStyle={...tabStyle,borderTopLeftRadius:'10px',borderTopRightRadius: '10px',}
+        newPropStyle={...tabStyle,borderTopLeftRadius:'10px',borderTopRightRadius: '10px',borderStyle: 'solid',  borderWidth: '1px', padding:'4px', cursor:'pointer'}
       }
       else{
         console.log("not Exists")
-        newPropStyle={...tabStyle,borderTopLeftRadius:'10px',borderTopRightRadius: '10px',}
+        newPropStyle={...tabStyle,borderTopLeftRadius:'10px',borderTopRightRadius: '10px',borderStyle: 'solid',  borderWidth: '1px', padding:'4px', cursor:'pointer'}
       }
       setPropTabStyle(newPropStyle)
     }
@@ -46,11 +46,11 @@ export default function TabComponent({tabsData,tabStyle,selectedTabStyle}) {
       if('borderTopLeftRadius' in selectedTabStyle){
         var newSelectedPropStyle={}
         console.log("Exists")
-        newSelectedPropStyle={...selectedTabStyle,borderTopLeftRadius:'10px',borderTopRightRadius: '10px',}
+        newSelectedPropStyle={...selectedTabStyle,borderTopLeftRadius:'10px',borderTopRightRadius: '10px', borderStyle: 'solid',  borderWidth: '1px', padding:'6px',}
       }
       else{
         console.log("not Exists")
-        newSelectedPropStyle={...selectedTabStyle,borderTopLeftRadius:'10px',borderTopRightRadius: '10px',}
+        newSelectedPropStyle={...selectedTabStyle,borderTopLeftRadius:'10px',borderTopRightRadius: '10px',borderStyle: 'solid',  borderWidth: '1px', padding:'4px', cursor:'pointer'}
       }
       setPropSelectedTabStyle(newSelectedPropStyle)
     }

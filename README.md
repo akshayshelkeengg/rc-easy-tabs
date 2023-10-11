@@ -19,23 +19,11 @@ import React, { useState } from 'react'
 import TabComponent from 'rc-easy-tabs'
 
 const App = () => {
-   const tabStyle= {
-    background:'#C0CFFA',
-    borderStyle: 'solid',
-    borderWidth: '1px',
-    padding:'4px',
-    borderTopLeftRadius: '10px',
-    borderTopRightRadius: '10px',
-    cursor: 'pointer',
+  const tabStyle= {
+    background:'#C0CFFA',   
   }
 
-  const selectedTab= {
-    borderStyle: 'solid',
-    borderWidth: '1px',
-    padding:'6px',
-    borderTopLeftRadius: '10px',
-    borderTopRightRadius: '10px',
-    cursor: 'pointer',
+  const selectedTab= {  
     background:'#48578E',    
     color:'white'
   }  
